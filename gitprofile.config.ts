@@ -2,60 +2,97 @@
 
 const CONFIG = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
+    username: 'rixxz142', // Your GitHub org/user name. (This is the only required config)
   },
   /**
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
    * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
-  base: '/gitprofile/',
+  base: '/portfolio/',
   projects: {
     github: {
       display: true, // Display GitHub projects?
       header: 'Github Projects',
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
+        sortBy: 'updated', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          forks: true, // Forked projects will not be displayed if set to true.
+          projects: ['rixxz142/rixxz142', 'rixxz142/portfolio'], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: [], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
-      header: 'My Projects',
+      header: 'Work Projects at Terra Drone Indonesia',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'TerraMAN WhatsApp Bot (2026)',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'Automated backup bot that archives messages and media shared in WhatsApp groups (text, files, images and videos) to Google Drive, organized into folders by group name.',
+          link: 'https://terra-drone.co.id',
         },
         {
-          title: 'Project Name',
+          title: 'TerraMAN Finance Telegram Bot (2026)',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'Telegram-based financial tracking bot that uses LLM and OCR to record AED transactions into Google Sheets and maintain user-specific financial records.',
+          link: 'https://terra-drone.co.id',
+        },
+        {
+          title: 'Terra Academy (2026)',
+          description:
+            'Learning Management System for managing drone training, courses, learning materials, user progress and certifications.',
+          link: 'https://terra-drone.co.id',
+        },
+        {
+          title: 'Product Reselling Hub (2026)',
+          description:
+            'Enterprise sales platform for managing inventory, sales, logistics, after-sales service and revenue tracking.',
+          link: 'https://terra-drone.co.id',
+        },
+        {
+          title: 'Terra Hub (2026)',
+          description:
+            'Centralized organization portal that provides access to multiple web products and internal applications through a single platform.',
+          link: 'https://terra-drone.co.id',
+        },
+        {
+          title: 'Terra Organize (2025 - 2026)',
+          description:
+            'Centralized drone fleet management system for managing pilots, inventory, maintenance, operations and flight logs.',
+          link: 'https://terra-drone.co.id',
+        },
+        {
+          title: 'Terra Progress (2025)',
+          description:
+            'Geospatial platform for monitoring project progress through interactive maps and visual documentation.',
+          link: 'https://terra-drone.co.id',
+        },
+        {
+          title: 'SkyOps Mobile & Web (2025)',
+          description:
+            'Digital inventory tracking system with mobile and web apps for checking equipment in and out of inventory and project sites, so every transported item is recorded and accounted for.',
+          link: 'https://terra-drone.co.id',
         },
       ],
     },
   },
-  seo: { title: 'Portfolio of Ariful Alam', description: '', imageURL: '' },
+  seo: {
+    title: 'Portfolio of Muhammad Rizqi Anugerah',
+    description:
+      'Software Engineer (Full Stack & Infrastructure) based in Bandung, Indonesia. Linux enthusiast who enjoys working across frontend, backend, databases, servers and deployment.',
+    imageURL: '',
+  },
   social: {
-    linkedin: 'ariful-alam',
-    x: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'muhammadrizqianugerah',
+    x: '',
+    mastodon: '',
     researchGate: '',
     facebook: '',
     instagram: '',
@@ -65,97 +102,103 @@ const CONFIG = {
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
+    medium: '',
+    dev: '',
     stackoverflow: '', // example: '1/jeff-atwood'
     discord: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
+    website: '',
     phone: '',
-    email: '',
+    email: 'rrizqianugrah@gmail.com',
   },
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
     'JavaScript',
-    'React.js',
+    'TypeScript',
+    'Python',
+    'Go',
+    'PHP',
+    'Java',
+    'C / C++',
+    'SQL',
+    'Bash',
+    'React',
+    'Next.js',
+    'Vue.js',
+    'React Native',
     'Node.js',
-    'Nest.js',
-    'MySQL',
+    'Express.js',
+    'Flask',
+    'FastAPI',
+    'Laravel',
+    'Tailwind CSS',
     'PostgreSQL',
-    'Git',
+    'MySQL',
+    'MariaDB',
+    'MongoDB',
+    'Linux',
     'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+    'Podman',
+    'Nginx',
+    'PM2',
+    'GCP',
+    'n8n',
+    'Google APIs',
+    'Webhooks',
+    'Git',
+    'Vim',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
+      company: 'Terra Drone Indonesia',
+      position: 'Web Developer (Intern)',
+      from: 'June 2026',
       to: 'Present',
-      companyLink: 'https://example.com',
+      companyLink: 'https://terra-drone.co.id',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Terra Drone Indonesia',
+      position: 'Database Server (Intern)',
+      from: 'June 2025',
+      to: 'June 2026',
+      companyLink: 'https://terra-drone.co.id',
     },
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: 'SQL and Relational Databases',
+      body: 'Cognitive Class',
+      year: '2026',
+      link: '',
+    },
+    {
+      name: 'Data Analysis with Python',
+      body: 'Cognitive Class',
+      year: '2026',
+      link: '',
+    },
+    {
+      name: 'Drone Pilot Training Certificate',
+      body: 'Terra Drone Indonesia',
+      year: '2025',
+      link: '',
     },
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Binus University, Bandung & Jakarta',
+      degree: 'School of Computer Science, Database Technology',
+      from: 'September 2022',
+      to: 'Present',
     },
   ],
-  publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-  ],
+  publications: [],
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
+    username: '', // to hide blog section, keep it empty
     limit: 2, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
@@ -164,7 +207,7 @@ const CONFIG = {
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: { id: '', snippetVersion: 6 },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'dracula',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -219,7 +262,7 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
+  footer: `Made with <a
       class="text-primary" href="https://github.com/arifszn/gitprofile"
       target="_blank"
       rel="noreferrer"
